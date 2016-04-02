@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myLite Home page</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--Main styles-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--Adaptive styles-->
+<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+<!--Swipe menu-->
+<link rel="stylesheet" type="text/css" href="css/pushy.css">
+<!--fonts-->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<!--animation css-->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<!-- Slider Revolution -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen"/>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body class="promo"> 
+  <div class= 'alert alert-success' id='alarm' style='display:none; z-index:30; text-align:center;'><b>Heads Up!</b> you have <b>+10 credits</b> to access the features of this site. Earn more credits by liking or sharing this site with your neighbors and friends</div>
+  <div class= 'alert alert-danger' id='quota_alert' style='display:none; z-index:30; text-align:center;'>You are down to 2 Credits. Oya begin shake body</div>
+  <!--autorization-->
+  <div class="add_place none" id="autorized">
+    <div class="place_form login_form">
+      <i class="fa fa-times close_window" id="closeau"></i>
+      <h3>LOG IN to see your result<span></span></h3>
+      <form action="http://www.mylite.co.nf/indexCopy.html" method="post" name="myform1">
+        <label>Login:<input type="text" id="validate1" placeholder='user name' name='login' value="mom"></label>
+        <label>Password:<input type="password" id="validate2" placeholder='enter valid email' name='password' value="dad"></label>
+        <input type="checkbox" id="checkbox" name="checkbox1" value ="done" checked> <label for ='remember me'>Remember me</label>
+        <button class="btn btn-success" id="login_bt" type="submit">Log in</button>
+        <label>Create An Account, it's Free!</label>
+        <a href="#" class="btn btn-warning sign_up"><i class="icon-facebook"></i>Sign Up</a>
+      </form>
+    </div>
+  </div>
+
+<div class="add_place go_go none" id="pl">
+<div class="place_form">
+<i class="fa fa-times close_window" id="close"></i>
+<h3>Sign up For Free<span></span></h3>
+<form action='http://www.mylite.co.nf/indexCopy.html' method="post">
+<label>Full names:<input type="text" name="real name" placeholder="your real names" id="validate3"></label>
+<label>Email:<input type="password" name="password" placeholder="set password" id="validate4"></label>
+<label> Gender
+<select name="Gender">
+  <option value="">Choose one</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+</select>
+</label>
+<label> Age Bracket
+<select name="Age">
+<option value="">Choose one</option>
+<option value="under 18">Under 18</option>
+<option value="18 - 35">18 - 35</option>
+<option value="36 - 55">36 - 55</option>
+<option value="56 and above">56 and above</option>
+</select>
+</label>
+<label> Occupation
+<select name="occupation">
+  <option value="">Choose one</option>
+  <option value="Student">Student</option>
+  <option value="businessman">Enterprenuer</option>
+  <option value="professional">Working Class</option>
+  <option value="para-military">para military</option>
+  <option value="retired">Retired</option>
+</select>
+</label>
+
+<a href="#" class="green_btn_header" id="done" type="submit" name="signup submit">I'm Done</a>
+</form>
+</div>
+</div>
+
+
+
+  <!--navigation swipe-->
+  <nav class="pushy pushy-left">
+    <div class="profile">
+      <div class="avatar"><img src="img/avatar/ava_16.jpg" alt="#"><span>Beta</span></div>
+      <h3><a href="03.html">user_Name</a></h3>
+      <a href="#" class="log_btn">Log in</a>
+    </div>
+    <ul class="side_menu">
+      <li><a href="checkerPage.html"><i class="fa fa-users"></i>Checkers dashboard</a></li>
+      <li><a href="invite_us.html" class="animsition-link"><i class="fa fa-user"></i>Invite us</a></li>
+      <!--<li><a href="menu_2_page.html"><i class="fa fa-list"></i>Get started</a></li>-->
+      <li><a href="support_faq_page.html"><i class="fa fa-life-ring"></i>Support/FAQ</a></li>
+      <li><a href="coverage_areas.html"><i class="fa fa-building-o"></i>Coverage Areas</a></li>
+      <li id="best_uses"><a href="#"><i class="fa fa-balance-scale"></i>Best Uses</a></li>
+      <li id="site_map"><a href="#" onclick="sorry_siteMap();"><i class="fa fa-map"></i>Site Map</a></li>
+      <li><a href="signOut.html"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+    </ul>
+  </nav>
+
+  <!-- Site Overlay -->
+  <div class="site-overlay"></div>
+  <div id="container">
+    <div class="top_promo_block" id="promo_head">
+      <div class="menu-btn">&#9776;<span id="quota"></span></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header_promo">
+              myLITE
+              <!--<img src="img/start/logo.png" alt="#">-->
+              <a href="#" class="log_btn">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="start_descrition">
+        <h1>Do You Have Light?<span></span></h1>
+        <span>Check Now!</span>
+        <div class="search_promo">
+          <div class="input-group">
+            <input type="text" class="form-control input_class" aria-label="..."  id="any_address" placeholder="enter street name">
+            <div class="input-group-btn btn_cat">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span><i class="fa fa-map-marker"></i>West Africa<span class="caret"></span></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right place_dd" role="menu">
+                <li class="disabled"><a href="invite_us.html" class="Ajah"><i class="fa fa-map-marker"></i>East Africa</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Ikeja"><i class="fa fa-map-marker"></i>North Africa</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Festac"><i class="fa fa-map-marker"></i>South Africa</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Mushin"><i class="fa fa-map-marker"></i>India</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Oshodi"><i class="fa fa-map-marker"></i>Indian Pacific</a></li>
+                <!--<li class="disabled"><a href="invite_us.html" class="Berger"><i class="fa fa-map-marker"></i>Ojodu Berger</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Ilupeju"><i class="fa fa-map-marker"></i>Ilupeju</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Yaba"><i class="fa fa-map-marker"></i>Yaba</a></li>
+                <li class="disabled"><a href="invite_us.html" class="Oworo disabled"><i class="fa fa-map-marker"></i>Oworonshoki</a></li>-->
+              </ul>
+            </div>
+            <div class="input-group-btn btn_promo_search">
+              <button type="button" class="btn btn-success carri_go">carri Go</button>
+              <!--<a href="#autorized" type="button" class="btn btn-success carri_go" data-toggle="">carri Go</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll_block">
+        <!--<img src="img/scroll.png" class="animated infinite bounce" alt="#">-->
+        <h2 class="animated infinite bounce" style="text-align:center; font-family: 'Roboto', sans-serif; color:#b1ddab; font-weight:100;">OR</h2>
+      </div>
+    </div>
+
+    
+<!--
+#################################
+- Slider revolution -
+#################################
+-->
+<div class="tp-banner-container">
+  <div class="tp-banner" >
+    <ul>
+
+<!-- SLIDE  -->
+<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000">
+  <!-- MAIN IMAGE -->
+  <img src="img/start/sl1/sl_bg.png"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+  <!-- LAYERS -->
+  <!-- LAYER NR. 1 -->
+  <div class="tp-caption lfb fadeout rs-parallaxlevel-5"
+  data-x="center" 
+  data-y="320" 
+  data-speed="1000"
+  data-start="400"
+  data-easing="Power4.easeOut">
+  <img src="img/start/sl3/h1.png" alt="#">
+</div>
+<!-- LAYER NR. 1 -->
+<div class="tp-caption lfb fadeout rs-parallaxlevel-1"
+data-x="center" 
+data-y="340" 
+data-speed="1500"
+data-start="700"
+data-easing="Power4.easeOut">
+<img src="img/start/sl3/h2.png" alt="#">
+</div>
+<!-- LAYER NR. 1 -->
+<div class="tp-caption lfb fadeout rs-parallaxlevel-10"
+data-x="center" 
+data-y="560" 
+data-speed="2000"
+data-start="1000"
+data-easing="Power4.easeOut">
+<img src="img/start/sl3/h3.png" alt="#">
+</div>
+<!-- LAYER NR. 1 -->
+<div class="tp-caption lft fadeout rs-parallaxlevel-1"
+data-x="center"
+data-y="top"
+data-speed="2500"
+data-start="1200"
+data-easing="Power4.easeOut">
+<div class="sl_descrition top">
+  <h1><b>set your</b> Address<span></span></h1>
+  <span>You know your house better</span>
+  <div class="btns"><a href='#' class="btn btn-success">Let's Go There</a></div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<!--Features block-->
+    <div class="fea_block container-fluid">
+      <div class="fixed_w">
+        <h2>Features</h2>
+        <div class="row">
+          <div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-lightbulb-o"></i>Check for Power</h3>
+            <span>Dont be left in the dark, find out if you have light at home and anywhere else</span>
+          </div>
+          <div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-comment"></i>Report a Problem</h3>
+            <span>Use uur ONE CLICK messaging to inform your local power provider about your power problem(s)....and dont worry, it will get to the 'oga at the top'<i class="fa fa-smile-o" style="color:yellow;"></i></span>
+          </div>
+          <div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-clock-o"></i>Power Forecast</h3>
+            <span>Preview what power will be like for you in the next 7 days. Our predictions are as close as they can get</span>
+          </div>
+        </div>
+          <!--<div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-map-signs"></i>Set Address</h3>
+            <span>Easily communicate your address by manually tweaking your address on our map grid. its as simple as playing a Game</span>
+          </div>-->
+        <div class="row">
+          <div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-bell"></i>Get instant Power Alert</h3>
+            <span>Be notified immediately there is power supply or outage and join the 'up Nepa' chorus wherever you are.</span>
+          </div>
+          <div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-folder-open-o"></i>Store Utility Bills</h3>
+            <span>Safe keep your power related documents here. You never know when you might need them</span>
+          </div>
+          <div class="col-md-4 fea_item wow bounceInUp">
+            <h3><i class="fa fa-users"></i>Become a Checker</h3>
+            <span>Join our community of Checkers and start earning rewards. Click to find out more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+         
+
+    <!--just testing-->
+    <div class="places_index_block container-fluid">
+  <div class="fixed_w">
+    <h2>How it works</h2>
+    <div class="row">
+      <div class="col-md-4 place_index_item  wow bounceInLeft">
+        <div class="place_inn">
+          <img src="img/p1.png" alt="#">
+          <div class="pl_descr">
+            <h3><b>1. </b>Power Distribution Analysis <i class="fa fa-line-chart"></i></h3>
+            <span>We gather and study power distribution patterns in our coverage area. Our team of experts study supply trends and statistically analyse these findings</span>
+            <ul class="rate">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star no"></i></li>
+              <li><i class="fa fa-star no"></i></li>
+              <li><i class="fa fa-star no"></i></li>
+              <li><i class="fa fa-star no"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 place_index_item  wow bounceInUp">
+        <div class="place_inn">
+          <img src="img/p2.png" alt="#">
+          <div class="pl_descr">
+            <h3><b>2. </b>Cross-Check <i class="fa fa-eye"></i><i class="fa fa-eye"></i></h3>
+            <span>We then run thses findings through our network of Checkers for accuracy testing</span>
+            <ul class="rate">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star no"></i></li>
+              <li><i class="fa fa-star no"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 place_index_item  wow bounceInRight">
+        <div class="place_inn">
+          <img src="img/p3.png" alt="#">
+          <div class="pl_descr">
+            <h3><b>3. </b>Broadcast <i class="fa fa-bullhorn"></i></h3>
+            <span>.....we then broadcast the final result.</span>
+            <ul class="rate">
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+              <li><i class="fa fa-star"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#any_address" class="btn btn-success va"><i class="fa fa-angle-double-up"></i> Back to Top</a>
+  </div>
+</div>
+</div>
+
+<!--
+
+#################################
+- SCRIPT FILES -
+#################################
+-->
+<!--Google maps API linl-->
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?keyAIzaSyDuKxmoTalAtaQLggmgL7VnYnntHajaLQ8&signed_in=true&libraries=places,geometry"></script>
+
+<!--scroll animation-->
+<!--<script>
+new WOW().init();
+</script>
+
+<!--Slider revolution settings-->
+<!--<script type="text/javascript">
+jQuery(document).ready(function() {
+  jQuery('.tp-banner').show().revolution(
+  {
+    dottedOverlay:"none",
+    delay:16000,
+    startwidth:1170,
+    startheight:700,
+    hideThumbs:200,
+    thumbWidth:100,
+    thumbHeight:50,
+    thumbAmount:5,
+    navigationType:"bullet",
+    navigationArrows:"solo",
+    navigationStyle:"preview4",
+    touchenabled:"on",
+    onHoverStop:"on",
+    swipe_velocity: 0.7,
+    swipe_min_touches: 1,
+    swipe_max_touches: 1,
+    drag_block_vertical: false,
+    parallax:"scroll",
+    parallaxBgFreeze:"on",
+    parallaxLevels:[10,7,4,3,2,5,4,3,2,1],
+    keyboardNavigation:"off",
+    navigationHAlign:"center",
+    navigationVAlign:"bottom",
+    navigationHOffset:0,
+    navigationVOffset:20,
+    soloArrowLeftHalign:"left",
+    soloArrowLeftValign:"center",
+    soloArrowLeftHOffset:20,
+    soloArrowLeftVOffset:0,
+    soloArrowRightHalign:"right",
+    soloArrowRightValign:"center",
+    soloArrowRightHOffset:20,
+    soloArrowRightVOffset:0,
+    shadow:0,
+    fullWidth:"on",
+    fullScreen:"off",
+    spinner:"spinner4",
+    stopLoop:"off",
+    stopAfterLoops:-1,
+    stopAtSlide:-1,
+    shuffle:"off",
+    autoHeight:"off",           
+    forceFullWidth:"off",           
+    hideThumbsOnMobile:"off",
+    hideNavDelayOnMobile:1500,            
+    hideBulletsOnMobile:"off",
+    hideArrowsOnMobile:"off",
+    hideThumbsUnderResolution:0,
+    hideSliderAtLimit:0,
+    hideCaptionAtLimit:0,
+    hideAllCaptionAtLilmit:0,
+    startWithSlide:0,
+    videoJsPath:"rs-plugin/videojs/",
+    fullScreenOffsetContainer: "" 
+  });
+}); //ready
+</script>
+
+<!--Parallax house-->
+<!--<script type="text/javascript">
+"use strict";
+$('.categori_block').parallax({
+  'elements': [
+  {
+    'selector': '.categori_block',
+    'properties': {
+      'x': {
+        'background-position-x': {
+          'initial': 0,
+          'multiplier': 0.1,
+          'invert': true
+        }
+      },
+      'y': {
+        'background-position-y': {
+          'initial': -780,
+          'multiplier': 0.1,
+          'invert': true
+        }
+      }
+    }
+  }
+  ]
+});
+</script>
+
+<script type="text/javascript">
+"use strict";
+setHeiHeight(); 
+$(window).resize( setHeiHeight ); 
+
+function sorry_siteMap () {
+  document.getElementById("site_map").textContent = "Page under construction";
+}
+
+
+function sorry_bestUses () {
+  document.getElementById("best_uses").textContent = "Page under construction";
+}
+</script>-->
+<script data-main = "js_exp/common" src="js_exp/require.js"></script>
+</body>
+</html>
